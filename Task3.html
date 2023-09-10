@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Link Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .link-container {
+            margin-top: 20px;
+        }
+        .link {
+            margin: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    This is task 3
+    <p>Click any of the following links:</p>
+    <div class="link-container">
+        <a class="link" href="https://www.example.com" target="_blank">Opens in new</a>
+        <a class="link" href="https://www.example.com" target="_self">Opens in self</a>
+        <a class="link" href="https://www.example.com" target="_parent">Opens in parent</a>
+        <a class="link" href="https://www.example.com" target="_top">Opens in body</a>
+        <a class="link" href="mailto:youremail@example.com">Send email</a>
+    </div>
 </body>
 </html>
