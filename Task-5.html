@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0; /* Optional background color for the body */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        text-align: center;
+        background-color: #ffffff; /* Optional background color for the container */
+        padding: 20px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional box shadow */
+      }
+
+      h1 {
+        color: blue;
+      }
+
+      form {
+        text-align: left;
+        width: 100%;
+        max-width: 600px; /* Adjust the max-width as needed */
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      /* Style checkboxes and labels to be inline */
+      .checkbox-label {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+
+      /* Center the Register button */
+      .register-button-container {
+        text-align: center;
+      }
+
+      .register-button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Registration form</h1>
+    <div class="container">
+      <form>
+        <!-- Inline elements/non-block elements -->
+        <label for="firstName">First Name</label>
+        <input type="text" placeholder="First Name" id="firstName" /><br /><br />
+        <label for="lastName">Last Name</label>
+        <input type="text" placeholder="Last Name" id="lastName" /><br /><br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" id="email" /><br /><br />
+        <label for="password">Password</label>
+        <input type="password" placeholder="password" id="password" /><br /><br />
+        <label for="password">Re-enter Password</label>
+        <input type="password" placeholder="password" id="password" /><br /><br />
+        <p>Enter your gender</p>
+        <label class="checkbox-label">
+          <input type="radio" id="male" name="gender" /> Male
+        </label>
+        <label class="checkbox-label">
+          <input type="radio" id="female" name="gender" /> Female
+        </label>
+        <label class="checkbox-label">
+          <input type="radio" id="others" name="gender" /> Others
+        </label>
+        <br /><br />
+        <label for="age">Age</label>
+        <input type="number" placeholder="age" id="age" /><br /><br />
+        <label for="phoneNumber">Phone number</label>
+        <input type="tel" placeholder="Phone number" id="phoneNumber" /><br /><br />
+        <label for="address">Address</label>
+        <input type="address" placeholder="" id="address" /><br /><br />
+        <label for="state">State</label>
+        <input type="state" placeholder="" id="state" /><br /><br />
+        <label for="country">Enter your country</label>
+        <select name="country" id="country">
+          <option>select</option>
+          <option value="India">India</option>
+          <option value="Sri Lanka">Sri Lanka</option>
+          <option value="Afghanistan">Afghanistan</option>
+          <option value="Tibet">Tibet</option>
+          <option value="China">China</option>
+          <option value="Pakistan">Pakistan</option>
+        </select>
+        
+        <br /><br />
+        <p>Languages known</p>
+        <label class="checkbox-label">
+          <input type="checkbox" id="kannada" /> Kannada
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="english" /> English
+        </label>
+        <label class="checkbox-label">
+          <input type="checkbox" id="Hindi" /> Hindi
+        </label>
+        <br /><br />
+        <label class="checkbox-label">
+          <input type="checkbox" id="declaration" /> Hereby I declare all the given details are true
+        </label>
+        
+        <br /><br />
+        <div class="register-button-container">
+          <button class="register-button">Register</button>
+        </div>
+      </form>
+    </div>
+    <!-- Taking the entire width of the webpage -> block elements -->
+  </body>
+</html>
