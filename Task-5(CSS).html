@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Styled Page</title>
+  <style>
+    /* Style for the body */
+    body {
+      background-color: yellow;
+      color: maroon;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: row; /* Arrange elements in a row */
+      justify-content: space-between; /* Space between the left and right columns */
+    }
+
+    /* Style for the navigation buttons */
+    .nav {
+      text-align: left;
+      padding-left: 20px; /* Add some left padding to the navigation buttons */
+    }
+
+    .nav-button {
+      margin-bottom: 20px; /* Add some bottom margin to separate buttons */
+      background-color: white; /* White background for each button */
+      padding: 10px; /* Add some padding to the button container */
+      border-radius: 5px; /* Rounded corners for the button container */
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav a:hover {
+      color: maroon;
+    }
+
+    /* Style for the text content */
+    .content {
+      text-align: center;
+      margin: auto; /* Center-align content in the remaining space */
+    }
+
+    /* Style for the lines of text */
+    .big-text {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .normal-text {
+      font-size: 16px;
+    }
+
+    /* Style for the horizontal line */
+    hr {
+      border: 1px solid maroon;
+      width: 80%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation buttons on the left -->
+  <div class="nav">
+    <div class="nav-button">
+      <a href="#">Home Page</a>
+    </div>
+    <div class="nav-button">
+      <a href="#">Musings</a>
+    </div>
+    <div class="nav-button">
+      <a href="#">My Town</a>
+    </div>
+    <div class="nav-button">
+      <a href="#">Links</a>
+    </div>
+  </div>
+
+  <!-- Text content in the center -->
+  <div class="content">
+    <p class="big-text">My first styled page</p>
+    <p class="normal-text">Welcome to my styled page!</p>
+    <p class="normal-text">It lacks images, but at least it has style. And it has links, even if they don't go anywhere.</p>
+    <p class="normal-text">There should be more here, but I don't know what yet.</p>
+    <hr>
+    <p>---------------------------------------------------------------------</p>
+    <p>Made 11 September 2023 by myself.</p>
+  </div>
+</body>
+</html>
