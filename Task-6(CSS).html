@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Center-align everything */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    /* Style for the form container */
+    .login-form-container {
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style for the image */
+    .profile-image {
+      width: 100px; /* Adjust the width as needed */
+      height: auto;
+      margin-bottom: 20px; /* Add spacing between the image and other elements */
+    }
+
+    /* Style for the buttons */
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .green-btn {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .red-btn {
+      background-color: #F44336;
+      color: white;
+    }
+
+    /* Style for the input fields */
+    input[type="text"],
+    input[type="password"] {
+      padding: 3px;
+      margin: 10px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* Style for the checkbox */
+    input[type="checkbox"] {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-form-container">
+    <img src="User.jpg" alt="User Profile" class="profile-image">
+    <br /><br />
+    <label for="username">Username</label>
+    <input type="text" id="username" placeholder="Enter Username">
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter Password">
+    <div>
+      <button class="btn green-btn">Login</button>
+    </div>
+    <div>
+      <label for="remember-me">Remember me</label>
+      <input type="checkbox" id="remember-me">
+    </div>
+    <div>
+      <button class="btn red-btn">Cancel</button>
+    </div>
+    <p><a href="#">Forgot password?</a></p>
+  </div>
+</body>
+</html>
