@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #910808; /* Dark Maroon */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: left;
+            background-color: #800000; /* Light Maroon */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        label,
+        p {
+            color: white;
+            /* Additional styling if needed */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: #ffe4e1; /* Light Maroon */
+        }
+
+        .checkbox-label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: white;
+            color: #800000; /* Light Maroon */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Optional: Adjust the checkbox appearance */
+        input[type="checkbox"],
+        input[type="radio"] {
+            /* Additional styling if needed */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="Full Name">Name: </label>
+        <input type="text" placeholder="Your name" id="Full Name" /><br />
+
+        <label for="Email">Email: </label>
+        <input type="email" placeholder="Your email" id="Email" /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter Password" id="password" /><br />
+
+        <label for="Phone Number">Phone Number:</label>
+        <input type="tel" placeholder="Your phone number" id="Phone Number" /><br />
+
+        <p>Enter your gender</p>
+        <label class="checkbox-label">
+            <input type="radio" id="male" name="gender" /> Male
+        </label>
+        <label class="checkbox-label">
+            <input type="radio" id="female" name="gender" /> Female
+        </label>
+        <label class="checkbox-label">
+            <input type="radio" id="others" name="gender" /> Others
+        </label>
+
+        <label for="language">Language:</label>
+        <select name="language" id="language">
+            <option>Select</option>
+            <option value="Kannada">Kannada</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="Telugu">Telugu</option>
+        </select>
+
+        <label for="Zip code">Zip Code:</label>
+        <input type="text" placeholder="Your zip code" id="Zip code" /><br />
+
+        <label for="About">About:</label>
+        <textarea placeholder="Write about yourself...." id="About"></textarea><br />
+
+        <div class="Register">
+            <button class="Save">Register</button>
+        </div>
+    </form>
+</body>
+</html>
